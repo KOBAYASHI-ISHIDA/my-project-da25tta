@@ -78,12 +78,22 @@ h1{
 
 /*TIÊU ĐỀ LIÊN HỆ*/
 .tieude1{
+	background-color: #1877F2; !important
     font-size: 13pt;
     font-weight: 600;
     border: 1px solid black;
     max-width: 15%;
     border-radius: 15px;
+	text-decoration: none;
+	border-color: #1877F2; !important
 }
+.tieude2{
+    font-size: 13pt;
+    font-weight: 600;
+    max-width: 15%;
+}
+
+
 
 /*FOOTER*/
 .foot h2,.foot p,.foot a{
@@ -93,4 +103,9 @@ h1{
 }
 .foot{
     background-color: darkred;
+}
+
+.dhtv{
+	color: black;
+	font-weight: 700;
 }
