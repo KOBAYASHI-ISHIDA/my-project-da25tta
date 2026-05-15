@@ -1,0 +1,96 @@
+/*ĐỊNH DẠNG CSS*/
+*{
+    background-color: #F0EAD6;
+}
+
+/*AVATAR*/
+#avt{
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+}
+
+/*BANG GIOI THIEU*/
+.bang1{
+    border-collapse:collapse;
+}
+.bang1 td,.bang1 td{
+        padding:15px 20p;
+}
+#gioithieu{
+    font-size: 15pt;
+}
+
+
+/*BẢNG THÔNG TIN CHI TIẾT*/
+.bang2{
+   border-radius: 15px;
+   overflow: hidden;
+    
+}
+.bang2 td,.bang2 th{
+    font-size: 13pt;
+    text-align: center;
+    color:#701C1C;
+    background-color:#FFFFE0;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+
+/*DIV CỦA WEB*/
+.info{
+    background-color: #F0EAD6;
+}
+
+/*TÊN*/
+h1{
+    font-family: Monaco ;
+    text-align: center;
+    color: #701C1C;
+    text-transform: uppercase;
+    padding:20px;
+}
+
+/*CÁC DÒNG H2*/
+.tieude{
+    color: #701C1C;
+
+}
+
+/*LIST SỞ THÍCH*/
+#sothich{
+    list-style-type:none;
+}
+#sothich li{
+    padding: 5px;
+    font-size:13pt;
+    font-weight: 600;
+}
+
+/*LIST KỸ NĂNG MỤC TIÊU*/
+#kynang li{
+    padding: 5px;
+    font-size:13pt;
+    font-weight: 600;
+}
+
+
+/*TIÊU ĐỀ LIÊN HỆ*/
+.tieude1{
+    font-size: 13pt;
+    font-weight: 600;
+    border: 1px solid black;
+    max-width: 15%;
+    border-radius: 15px;
+}
+
+/*FOOTER*/
+.foot h2,.foot p,.foot a{
+    background-color: darkred;
+    color:#F0EAD6 ;              
+    padding: 5px;     
+}
+.foot{
+    background-color: darkred;
+}
