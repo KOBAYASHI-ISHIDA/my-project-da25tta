@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thông báo</title>
+    </head>
+	<body>
+        <p id="name">Tên</p>
+        <p id="age">Tuổi</p>
+        <script>
+            let name = prompt("Nhập tên của bạn")
+            let yob = Number(prompt("Nhập ngày sinh của bạn"))
+            window.alert(`${name} ơi năm nay bạn đã ${2026 - yob} tuổi rồi đấy!`);
+            document.getElementById("name").innerHTML = `Tên:${name}`;
+            document.getElementById("age").innerHTML = `Tuổi: ${2026-yob}`;
+
+        </script>
+	</body>

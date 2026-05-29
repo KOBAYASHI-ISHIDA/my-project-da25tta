@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Diện tích hình</title>
+    </head>
+	<body>
+        <p id="dt">diện tích hình</p>
+        <script>
+            let d;
+            let r;
+            do{
+            d = Number(prompt("Nhập chiều dài"))
+            r = Number(prompt("Nhập chiều rộng"))
+            if(d < r)
+            {
+                window.alert("Vui lòng nhập chiều rộng <= chiều dài");
+            }
+            }while(d < r);
+
+            if(d==r){
+            document.getElementById("dt").innerHTML = (`Hình vuông có cạnh là ${d} cm diện tích hình là ${d*d} cm^2`);
+            }
+            else
+            document.getElementById("dt").innerHTML = (`Hình chữ nhật có chiều dài là ${d} cm và rộng ${r} cm diện tích hình là ${d*r} cm^2`);
+        </script>
+	</body>

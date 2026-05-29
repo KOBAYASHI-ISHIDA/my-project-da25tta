@@ -1,0 +1,26 @@
+table
+{
+    text-align:center;
+    margin:auto;
+    width:800px;
+    height:200px;
+    font-size: 14pt;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: #e35646;
+    background: linear-gradient(90deg,rgba(227, 86, 70, 1) 0%, rgba(99, 83, 189, 1) 50%, rgba(25, 171, 255, 1) 100%);
+    border-collapse: collapse  ;
+
+}
+
+.container{
+    margin:300px 530px; 
+    padding: 20px 0px;
+    background-color: black ;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 30pt;
+    text-align: center;
+}
