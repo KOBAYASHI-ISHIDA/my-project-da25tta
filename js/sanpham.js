@@ -1,5 +1,5 @@
 
-const product ={
+const product1 ={
         name : "xe điện VF9",
         image : "../assets/images/VinFast-VF9.jpg",
         price : "1.300.000.000 VNĐ",
@@ -13,6 +13,22 @@ const product2 ={
         description : "Xe điện VF3 thân thiện với môi trường, nhỏ gọn",
         link : "../html/tham-khao.html"
     };
+
+    const product =[{
+        name : "xe điện VF9",
+        image : "../assets/images/VinFast-VF9.jpg",
+        price : "1.300.000.000 VNĐ",
+        description : "Xe điện VF9 thân thiện với môi trường",
+        linkProduct : "../html/tham-khao.html"
+        },
+        {
+        name : "xe điện VF3",
+        image : "../assets/images/VinFast-VF3.jpg",
+        price : "299.000.000 VNĐ",
+        description : "Xe điện VF3 thân thiện với môi trường, nhỏ gọn",
+        linkProduct : "../html/tham-khao.html"
+    }];
+
 
 
 function CreateItem(obj)
@@ -63,6 +79,35 @@ function CreateItem(obj)
     document.getElementById("productlist").appendChild(containerItem);
 }
 
+function createItemV2(obj)
+{
+    const list = document.getElementById("productlist");
+    list.innerHTML +=`
+        <div class="col">
+                        <div class= "card product-item">
+                            <div class="product-item">
+                                    <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
+                            </div>
+                            <div class="card-body product-info text-center">
+                            
+                                <h4 class="card-title text-danger">${obj.name}</h4>
+                                <h5 class="card-text">${obj.price}</h5>
+                                <p style= "text-align:justify; line-height:2" class="card-text">${obj.description}</p>
+                                <a href="${obj.linkProduct}" class="card-link btn btn-info">Xem chi tiết</a>
 
+                            </div>
+                            
+                        </div>
+                    </div>`;
+}
 
+function loadAllProducts(array)
+{
+    let i =0;
+    while(i<array.length)
+    {
+        createItemV2(array[i]);
+        i++;
+    }
+}
     
