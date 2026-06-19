@@ -12,4 +12,3 @@ const product =[{
         description : "Xe điện VF3 thân thiện với môi trường, nhỏ gọn",
         linkProduct : "../html/tham-khao.html"
     }];
-
