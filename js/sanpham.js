@@ -65,31 +65,26 @@ function CreateItem(obj)
     document.getElementById("productlist").appendChild(containerItem);
 }
 
-function createItemV2(obj) {
+function createItemV2(obj)
+{
     const list = document.getElementById("productlist");
-
-    list.innerHTML += `
+    list.innerHTML +=`
         <div class="col">
-            <div class="card h-100">
-                <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
-                
-                <div class="card-body text-center">
-                    <h4 class="card-title text-danger">${obj.name}</h4>
-                    <h5>${obj.price}</h5>
-                    <p style="text-align:justify;">
-                        ${obj.description}
-                    </p>
-                    <a href="${obj.linkProduct}" class="btn btn-info">
-                        Xem chi tiết
-                    </a>
-                </div>
-            </div>
-        </div>
-    `;
-}
+                        <div class= "card product-item">
+                            <div class="product-image">
+                                    <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
+                            </div>
+                            <div class="card-body product-info text-center">
+                            
+                                <h4 class="card-title text-danger">${obj.name}</h4>
+                                <h5 class="card-text">${obj.price}</h5>
+                                <p style= "text-align:justify; line-height:2" class="card-text">${obj.description}</p>
+                                <a href="${obj.linkProduct}" class="card-link btn btn-info">Xem chi tiết</a>
 
-function loadAllProducts(array) {
-    array.forEach(item => createItemV2(item));
+                            </div>
+                            
+                        </div>
+                    </div>`;
 }
 
 function loadAllProducts(array)

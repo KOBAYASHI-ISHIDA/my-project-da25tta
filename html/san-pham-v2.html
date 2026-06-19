@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm V2</title>
 
+    <title>Danh sách sản phẩm</title>
+
+    <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
 
-    <div class="container mt-4">
-        <div id="productlist" class="row row-cols-1 row-cols-md-4 g-4"></div>
-    </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="../js/data.js"></script>
     <script src="../js/lib.js"></script>
+</head>
+<body>
 
-    <script>
-        loadAllProducts(product);
-    </script>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Danh sách sản phẩm</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
+         id="productlist">
+    </div>
+</div>
+
+<script>
+    loadAllProducts(product);
+</script>
 
 </body>
 </html>

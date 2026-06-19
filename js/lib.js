@@ -4,15 +4,22 @@ function createItemV2(obj) {
     list.innerHTML += `
         <div class="col">
             <div class="card h-100">
-                <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
-                
-                <div class="card-body text-center">
-                    <h4 class="card-title text-danger">${obj.name}</h4>
-                    <h5>${obj.price}</h5>
-                    <p style="text-align:justify;">
+                <img
+                    src="${obj.image}"
+                    class="card-img-top"
+                    alt="${obj.name}"
+                >
+
+                <div class="card-body">
+                    <h5 class="card-title">${obj.name}</h5>
+                    <h6 class="text-danger">${obj.price}</h6>
+
+                    <p class="card-text">
                         ${obj.description}
                     </p>
-                    <a href="${obj.linkProduct}" class="btn btn-info">
+
+                    <a href="${obj.link}?masp=${obj.id}"
+                       class="btn btn-primary">
                         Xem chi tiết
                     </a>
                 </div>
@@ -22,5 +29,9 @@ function createItemV2(obj) {
 }
 
 function loadAllProducts(array) {
-    array.forEach(item => createItemV2(item));
+    document.getElementById("productlist").innerHTML = "";
+
+    array.forEach(item => {
+        createItemV2(item);
+    });
 }
